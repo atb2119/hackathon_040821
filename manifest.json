@@ -1,17 +1,23 @@
 {
-  "name": "Hello Extensions",
+  "name": "NOBS",
   "description": "Base Level Extension",
   "version": "1.0",
   "manifest_version": 2,
   "content_scripts": [
     {
       "matches": ["https://newyork.craigslist.org/*"],
-      "js": ["./main.js"]
+      "js": ["./main.js", "./popup.js"]
     }
   ],
   "browser_action": {
-      "default_popup": "popup.html"
-  }
+      "default_popup": "popup.html",
+      "default_icon": "no_bs.png"
+  },
+  "content_security_policy": "script-src 'self' 'sha256-elIQWIkM0Lg2QFFfWWdYmSUIUrl19KHdQ22GmnAYVeE='; object-src 'self'",
+  "permissions": [
+    "tabs"
+  ]
   
 }
+
 

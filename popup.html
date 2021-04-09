@@ -1,26 +1,42 @@
-<html>
+<!doctype html>
+<html></html>
   <head>
     <title>Filter Popup</title>
+    <style>
+      label {
+        font: 8px Arial, sans-serif;
+      }
+      body {
+        background-color: lightgreen;
+      }
+      button {
+        background-color:lightseagreen;
+      }
+    </style>
+    <script src='popup.js'> </script>
   </head>
   <body>
       <!-- <img src='./stay_hydrated.png' id='hydrateImage'> -->
       <!-- <button id='sampleSecond' value='0.1'>Sample Second</button>
       <button id='15min' value='15'>15 Minutes</button>
       <button id='30min' value='30'>30 Minutes</button>-->
-    <input type="text">
-    <button id='submitSearchWord'>Submit</button>
+    <h1>NO BS</h1>
+    <h2>Filter out the crap!</h2>
+    <input type="checkbox" class = 'box' id="box1" name="cash" value="cash">
+    <label for = 'cash'>"cash"</label>
+    <input type="checkbox" class = 'box' id="box2" name="buy" value="buy">
+    <label for = 'buy'>"buy"</label>
+    <input type="checkbox" class = 'box' id="box3" name="trade" value="trade">
+    <label for = 'trade'>"trade"</label>
+    <h4>Custom Filter</h4>
+    <input id = "textBox" type="text">
+    <button id='submitButton'>Get this BS off my screen!</button>
     <!-- <script src="popup.js"></script> -->
   </body>
-  
-  <script>
-    const button = document.querySelector('input');
-    
-
-    button.addEventListener('click', updateButton);
-
-function updateButton() {
-  
-}
-  </script>
 
 </html>
+
+<!-- 
+changelog 040921 
+added id to text field
+created new js file - note - chrome does not allow for script tags in html for security reasons (???) -->
