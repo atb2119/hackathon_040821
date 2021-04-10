@@ -44,26 +44,18 @@ chrome.runtime.onMessage.addListener(payload => {
   }
 });
 
-//declare onclick function to grab text from input and pass to keywords array/string
 
 //Features:
 //track/display number of filtered items
 //user input to specify key words
 
-//define a variable that stores search criteria (i.e. - string "we buy")
-// let fakeKeywords = '';
-// //Once we have variable, iterate through the content/nodes, searching for the criteria
-// for (let i = 0; i < allResults.length; i++){
-//   //Once we have matched critera to content, hide that content
-//   if (allResults[i].innerText.includes(fakeKeywords)){
-//     allResults[i].style.display += "none";
-//   }
-// }
-
-
 //changelog
 //4/9 3:25 pm - in manifest file (cannot comment in that file)- added icon, changed name to "no bs"
-//added content security policy to allow us to pass script to popup.html
-//added tabs permissions - see "messaging" - to pass info from extension popup to main script
+//added some check boxes (for commonly BS keywords)
+//added some basic CSS to popup.html
+//manifest file - added content security policy to allow us to pass script to popup.html
+//manifest file - added tabs permissions - see "messaging" - to pass info from extension popup to main script
 //good tutorial https://itnext.io/all-youll-ever-need-to-know-about-chrome-extensions-ceede9c28836
-//put everything inside the event listener (so it wont trigger until you input something)
+//popup.js - everything inside the event listener (so it wont trigger until you input something)
+//added message sender/listener - to send code from popup.js to main.js
+//changed keyword vairable (payload) to an array that will hold whatever is passed in+ checkboxes

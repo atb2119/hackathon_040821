@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', clicker);
 
 
-//experimental function for checking text boxes and check boxes
+//this function grabs all necessary data from popup upon click and sends it to main.js
 function clicker() {
   //grab the button and then do everything inside of this func
   document.getElementById('submitButton').addEventListener('click',
@@ -29,6 +29,10 @@ function clicker() {
 })
 }
 
+
+
+
+//BELOW - ALL NOTES AND OLD FUNCTIONS THAT MAY HAVE WORKED AT SOME POINT
 
 //ok, we're about to try some crazy stuff - chrome extension messaging
 
